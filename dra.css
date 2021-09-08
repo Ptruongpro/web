@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text-color-white{
+    color: #fff;
+}
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+.mr-right{
+    float: right;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.colthirt{
+    width: 33.333333%;
+}
+.colhalf{
+    width: 50%;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*header (thanh cong cu)*/
+#head{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    background: #000;
+    box-shadow: 0 0 10px rgba(0,0,200,0.6);
+    z-index: 1;
+}
+#nav> li{
+    display: inline-block;
+}
+#nav .subnav li:hover,
+#nav> li:hover> a{
+    background-color: #004ff0;
+    color:rgb(49, 51, 24);
+}
+#nav li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 16px;
+    line-height: 40px;
+    display: block;
+}
+.menu{
+    font-size: 12px;
+}
+
+#nav .subnav{
+    min-width: 160px;
+    display: none;
+    background-color: #000;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0,0,200,0.6);
+}
+#nav .subnav a{
+    padding: 0 12px;
+}
+#nav.li,
+#nav .subnav li
+{
+    list-style-type: none;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#head .acc{
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+#head .acc:hover{
+    background-color: #ccc;
+    color: #000;
+}
+/*ket thuc phan thanh cong cu*/
+/*phan anh gioi thieu*/
+#slider{
+    position: relative;
+    padding-top: 50%;
+    margin-top: 43px;
+    background: url('../img/Background/dragon-ball-super-wallpaper-min.jpg') center/cover no-repeat;
+}
+#slider .text-slider{
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+#slider .text-slider p{
+    font-size: 50px;
+    color:rgba(57, 36, 116,0.7);
+}
+/*ket thuc phan gioi thieu*/
+/*phan content(phan than)*/
+#content .intro{
+    padding: 64px 0 112px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .player{
+    text-align: center;
+    margin-top: 15px;
+    font-style: italic;
+    opacity: 0.5;
+}
+#content .title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+/*choose character*/
+#content .choose-character{
+    background-color: #000;
+    color: #fff;
+}
+#content .quanlity-character{
+    background-color: #fff;
+    margin-top: 15px;
+}
+#content .quanlity-character li{
+    padding: 8px 20px;
+    list-style-type: none;
+    color: #000;
+    border: 1px solid #ccc;
+    font-weight: 600;
+}
+#content .number{
+    float: right;
+    line-height: 4px;
+    background-color: #000;
+    display: block;
+    padding: 8px;
+    border-radius: 50%;
+    color: rgba(250,0,100,0.6);
+    margin-top: -1px;
+}
+.choose{
+    margin: 32px -8px;
+    
+}
+.character{
+    padding: 0 8px;
+}
+
+.img-character{
+    width: 100%;
+    display: block;
+}
+.about-img{
+    background-color: #fff;
+    color: #000;
+    padding: 1.6px 16px;
+}
+.name-crt{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+.introduce-crt{
+    margin-top: 5px;
+    line-height: 1.4;
+    font-style: italic;
+    color:rgba(57, 36, 116,0.7)
+}
+.bt-choose{
+    padding: 8px;
+    margin: 20px 0 5px;
+    text-decoration: none;
+    display:inline-block;
+    color: #fff;
+    background-color: #000;
+}
+.bt-choose:hover{
+    color: #000;
+    background-color: #ccc;
+
+}
+/*end choose caracter*/
+/*gioi thieu cac nhan vat*/
+#content .about-goku{
+    text-align: justify;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 32px -120px;
+}
+.skill{
+    margin: 15px -100px 0;
+}
+.about-skill{
+    text-align: center;
+}
+.name-skill-1{
+    font-weight: 700;
+    color:rgb(140, 68, 235);
+}
+.name-skill-2{
+    font-weight: 700;
+    color:rgb(238, 138, 152);
+}
+.name-skill-3{
+    font-weight: 700;
+    color:rgb(192, 237, 248);
+}
+.img-skill{
+    width: 100%;
+    margin-top: 15px;
+}
+/* end gioi thieu nhan vat*/
+/*contact*/
+.contact{
+    margin: 24px -32px 0;
+}
+.contact-info{
+    font-size: 16px;
+    line-height: 8px;
+}
+.contact-info i[class*="ti-"] {
+    display: inline-block;
+}
+.controll-form{
+    padding: 8px;
+    width: 100%;
+}
+/*end content*/
+/*footer*/
+#footer{
+    width: 100%;
+    height: 300px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer .info a{
+    padding: 8px;
+    opacity: 0.6;
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+}
+#footer .info a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+/*end footer*/
+/*create acc*/
+.create-acc{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.open{
+    display: flex;
+}
+.form-acc{
+   width: 900px;
+   background-color: #fff;
+   min-height: 300px;
+   position: relative;
+   max-width: calc(100%-32px);
+   animation: faceIn ease 0.5s;
+}
+.close{
+    position:absolute;
+    padding: 12px;
+    right: 0;
+} 
+.close:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.title-acc{
+    width: 100%;
+    height: 130px;
+    font-size: 50px;
+    background-color: rgba(0,200,250,0.6);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.modal-acc{
+    margin-top: 18px;
+}
+.modal-input{
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    width: 90%;
+    padding: 8px;
+    font-size: 20px;
+}
+.footer-acc p{
+    float: right;
+    padding: 8px;
+    color:rgba(0,250,200,0.6)
+}
+/*end createacc*/
+@keyframes faceIn {
+    from{
+        opacity: 0;
+        transform: translateY(-100px)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }   
+}
